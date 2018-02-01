@@ -1,0 +1,27 @@
+{
+  "name": "generatepdf",
+  "version": "1.0.0",
+  "description": "pdfmake nodejs服务端的实现",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zangse/GeneratePDF.git"
+  },
+  "keywords": [
+    "node.js",
+    "pdfmake"
+  ],
+  "author": "zangse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zangse/GeneratePDF/issues"
+  },
+  "homepage": "https://github.com/zangse/GeneratePDF#readme",
+  "devDependencies": {
+    "koa-router": "^7.4.0",
+    "pdfmake": "^0.1.35"
+  }
+}

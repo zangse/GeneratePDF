@@ -11,6 +11,7 @@ const fonts = {
 exports.generate = async function(ctx, next) {
     let data = await createPdf(next);
     ctx.response.type = 'html'
+    // 返回了一个iframe，将base64的pdf作为内容，直接返回base64的数据会报错
     ctx.response.body = `<iframe width="100%" height="100%"  id="preview" type="application/pdf" src=${data}></iframe>`
 };
 
@@ -34,4 +35,12 @@ async function createPdf(next) {
         });
         pdfDoc.end();
     })
+    // 可以保存文件到tempFiles里面
+    // let writestream = fs.createWriteStream('tempFiles/' + filename);
+    // pdfDoc.pipe(writestream);
+    // writestream.on('close', function() {
+    //     console.log(new Date() - now);
+    // });
+    // pdfDoc.end();
+
 }

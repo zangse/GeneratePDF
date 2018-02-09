@@ -14,5 +14,23 @@ npm run start
 http://localhost:3000/pdf
 
 ```
-
+```
+//项目结构
+├── README.md
+├── app
+│   ├── fonts
+│   │   └── msyh.ttf  //字体文件
+│   ├── images
+│   │   ├── qrcode.png //用到的图片
+│   │   └── snh.jpg  
+│   ├── middleware
+│   │   └── generatePdf.middleware.js //生成文档js
+│   ├── models
+│   │   └── doc.model.js //文档原型
+│   └── routers
+│       └── index.js //路由文件
+├── app.js  
+├── package.json
+└── tempFiles  //缓存目录
+```
 

@@ -24,6 +24,12 @@ async function createPdf(next) {
     const filename = new Date().getTime() + '_' + random + ".pdf";
     let chunks = [];
     let result;
+    // 可以保存文件到tempFiles里面
+    // let writestream = fs.createWriteStream('tempFiles/' + filename);
+    // pdfDoc.pipe(writestream);
+    // writestream.on('close', function() {
+    //     console.log(new Date() - now);
+    // });
     return new Promise(function(resolve, reject) {
         pdfDoc.on('data', function(chunk) {
             chunks.push(chunk);
@@ -35,12 +41,6 @@ async function createPdf(next) {
         });
         pdfDoc.end();
     })
-    // 可以保存文件到tempFiles里面
-    // let writestream = fs.createWriteStream('tempFiles/' + filename);
-    // pdfDoc.pipe(writestream);
-    // writestream.on('close', function() {
-    //     console.log(new Date() - now);
-    // });
-    // pdfDoc.end();
+
 
 }

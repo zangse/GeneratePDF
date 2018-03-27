@@ -4,7 +4,7 @@
   "description": "pdfmake nodejs服务端的实现",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

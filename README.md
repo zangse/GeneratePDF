@@ -36,7 +36,7 @@ http://localhost:3000/pdf
 
 
 效果图
-![image](https://github.com/zangse/GeneratePDF/images/1522152502574.jpg)
+![image](https://github.com/zangse/GeneratePDF/blob/master/images/1522152502574.jpg)
 
 pdfmake可以做的还有很多,例如添加水印、设置页眉页脚等等，详情可以查看项目文档
 [pdfmake](https://github.com/bpampuch/pdfmake)
